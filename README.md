@@ -1,7 +1,7 @@
 # Obstacle Detection using v-Disparity  
 **Master 2 – Autonomous Mobile Systems (M2E3A)**  
 Perception – TC2 – G1, Université d'Évry / Université Paris Saclay  
-Supervisor: Pr. J-P. Tarel, Université Gustave Eiffel – Author: Kheir Eddine BELLAHCENE (2023–2024)  
+Supervisor: Pr. J-P. Tarel, Université de Gustave Eiffel – Author: Kheir Eddine BELLAHCENE (2023–2024)  
 
 **Full Report:** [Live HTML Report](https://kheiro-bellahcene.github.io/Obstacle-Detection-With-V-Disparity/)  
 
