@@ -3,7 +3,8 @@
 Perception – TC2 – G1, Université d'Évry / Université Paris Saclay  
 Supervisor: Pr. J-P. Tarel, Université de Gustave Eiffel – Author: Kheir Eddine BELLAHCENE (2023–2024)  
 
-**Full Report:** [Live HTML Report](https://kheiro-bellahcene.github.io/Obstacle-Detection-With-V-Disparity/)  
+**Full Report:**  
+👉 [Live HTML Report](https://kheiro-bellahcene.github.io/Obstacle-Detection-With-V-Disparity/)  
 
 ---
 
