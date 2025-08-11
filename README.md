@@ -1,34 +1,50 @@
-# Obstacle Detection using V-Disparity  
+# 🚗🔍 Obstacle Detection using **V-Disparity**
 **Master 2 – Autonomous Mobile Systems (M2E3A)**  
-Perception – TC2 – G1, Université d'Évry / Université Paris Saclay  
-Supervisor: Pr. J-P. Tarel, Université de Gustave Eiffel – Author: Kheir Eddine BELLAHCENE (2023–2024)  
+Perception – TC2 – G1  
+Université d'Évry / Université Paris-Saclay  
+**Supervisor:** Pr. J-P. Tarel (Université Gustave Eiffel)  
+**Author:** Kheir Eddine BELLAHCENE — 2023–2024  
 
-**Full Report:**  
-👉 [Live HTML Report](https://kheiro-bellahcene.github.io/Obstacle-Detection-With-V-Disparity/)  
-
----
-
-## Overview
-This project implements an **obstacle detection pipeline** based on **stereo vision** and **v-disparity analysis**.  
-The method estimates the road profile from stereo images, then detects obstacles as deviations from this profile.  
-
-**Main steps:**
-1. Compute the disparity map from rectified stereo images.
-2. Generate the v-disparity representation.
-3. Fit the road profile (`v = a·d + b`) using dominant disparity lines.
-4. Identify obstacles based on disparity peaks above the road model.
+📄 **Full Interactive Report:** [🔗 Live HTML Report](https://kheiro-bellahcene.github.io/Obstacle-Detection-With-V-Disparity/)  
 
 ---
 
-## Conclusion
-The v-disparity approach proves to be an effective and relatively simple method for detecting obstacles using stereo vision.  
-By modeling the road profile and analyzing deviations in the disparity domain, the system can localize potential hazards without complex 3D reconstruction.  
+## 🌟 Overview
+This project presents a **stereo vision–based pipeline** for **real-time obstacle detection**, leveraging the **v-disparity representation** to simplify road scene analysis.  
+The core idea: instead of directly handling noisy 3D reconstructions, we transform the problem into a **2D line detection** task in the disparity domain — cleaner, faster, and more robust.
 
-Its importance lies in transforming a difficult 3D perception problem into a simpler 2D line-detection problem:  
-- The road becomes a clear straight line in v-disparity space, making slope estimation easier.  
-- Obstacles appear as deviations above this line, enabling robust detection.  
-- It is computationally efficient, requiring less processing than full 3D analysis, and adapts to varying road slopes.  
+---
 
-This makes v-disparity highly suitable for real-time perception in autonomous mobile robots and advanced driver-assistance systems.
+### **Workflow**
+1. **Stereo Disparity Computation**  
+   Generate a disparity map from rectified stereo image pairs.
+2. **V-Disparity Map Construction**  
+   Convert the disparity map into a vertical profile histogram (v-disparity).
+3. **Road Profile Estimation**  
+   Detect and fit the dominant line corresponding to the road:  
+   `v = a·d + b`
+4. **Obstacle Detection**  
+   Identify disparity peaks **above** the fitted road profile — these are potential hazards.
+
+---
+
+## 📌 Key Insight
+> The road appears as a **straight, dominant line** in v-disparity space,  
+> while **obstacles stand out** as deviations above it.
+
+---
+
+## ✅ Advantages of V-Disparity Approach
+- **Simplicity:** Turns complex 3D geometry into a 2D line-fitting problem.
+- **Robustness:** Works under varying slopes and road shapes.
+- **Efficiency:** Less computationally heavy than full 3D reconstruction.
+- **Real-Time Potential:** Well-suited for **autonomous mobile robots** and **ADAS** systems.
+
+---
+
+## 🏁 Conclusion
+The v-disparity method offers an **elegant compromise** between accuracy and speed in road obstacle detection.  
+By abstracting away unnecessary complexity, it allows autonomous systems to **focus on actionable hazards** without overloading processing resources — a key requirement for safety-critical applications.
+
 
 
