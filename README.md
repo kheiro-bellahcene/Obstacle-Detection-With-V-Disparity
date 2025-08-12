@@ -1,4 +1,4 @@
-# 🚗🔍 Obstacle Detection using **V-Disparity**
+# 🚗🔍 Obstacle Detection using **V-Disparity** 
 **Master 2 – Autonomous Mobile Systems (M2E3A)**  
 Perception – TC2 – G1  
 Université d'Évry / Université Paris-Saclay  
